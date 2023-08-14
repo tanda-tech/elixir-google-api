@@ -40,7 +40,8 @@ defmodule GoogleApi.Sheets.Mixfile do
 
   defp deps() do
     [
-      {:google_gax, "~> 0.4"},
+      {:google_gax,
+       git: "git@github.com:tanda-tech/elixir-google-api.git", sparse: "clients/gax"},
 
       {:ex_doc, "~> 0.16", only: :dev}
     ]
